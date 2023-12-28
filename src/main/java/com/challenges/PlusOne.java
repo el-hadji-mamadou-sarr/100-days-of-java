@@ -4,7 +4,7 @@ public class PlusOne {
     public static int[] plusOne(int[] digits) {
         int rest = 1;
         int i = digits.length - 1;
-        while (i >= 0 && rest ==1) {
+        while (i >= 0 && rest ==1 ) {
             if (digits[i] == 9){
                 digits[i] = 0;
             }
@@ -13,6 +13,7 @@ public class PlusOne {
                 rest = 0;
                 
             }
+            i--;
         }
 
         if (rest == 1) {
