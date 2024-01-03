@@ -9,6 +9,6 @@ import com.dynamicProgramming.Fibonnacci;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Fibonnacci.fibonnacci(50));
+        System.out.println(Fibonnacci.fibonnacci(6));
     }
 }
