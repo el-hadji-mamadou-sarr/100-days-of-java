@@ -1,16 +1,14 @@
 package com.dsa;
 
-import com.dynamicProgramming.BestSum;
-import com.dynamicProgramming.CanConstruct;
-import com.dynamicProgramming.CountConstruct;
-import com.dynamicProgramming.HowSum;
-import com.dynamicProgramming.AllConstruct;
+import com.designPatterns.factoryMethod.BeefBurgerRestaurant;
+import com.designPatterns.factoryMethod.Burger;
 
 public class Main {
 
     public static void main(String[] args) {
-        String[] parts = { "ab", "cd", "abcd" };
-        String target = "abcd";
-        System.out.println(AllConstruct.allConstruct(target, parts));
+        BeefBurgerRestaurant beefResto = new BeefBurgerRestaurant();
+        Burger burger = beefResto.orderBurger();
+        System.out.println(burger.toString());
+
     }
 }
