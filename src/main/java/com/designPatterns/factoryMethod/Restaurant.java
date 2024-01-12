@@ -17,5 +17,6 @@ abstract class Restaurant {
         return burger;
     }
 
+    //this is the factory
     public abstract Burger createBurger();
 }

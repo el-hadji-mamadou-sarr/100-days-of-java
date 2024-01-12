@@ -1,14 +1,16 @@
 package com.dsa;
 
+import com.designPatterns.abstractFactory.Chair;
+import com.designPatterns.abstractFactory.VictorianFactory;
 import com.designPatterns.factoryMethod.BeefBurgerRestaurant;
 import com.designPatterns.factoryMethod.Burger;
 
 public class Main {
 
     public static void main(String[] args) {
-        BeefBurgerRestaurant beefResto = new BeefBurgerRestaurant();
-        Burger burger = beefResto.orderBurger();
-        System.out.println(burger.toString());
+        VictorianFactory victorianFactory = new VictorianFactory();
+        Chair victorianChair = victorianFactory.createChair();
+        
 
     }
 }
